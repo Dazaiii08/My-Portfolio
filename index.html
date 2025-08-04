@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manvansh Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="glow-circle"></div>
+            <h2 class="loading-text">Loading Portfolio...</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="portfolio-nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <span class="logo-text">MS</span>
+            </div>
+            <div class="nav-links">
+                <button class="nav-link active" data-target="home">Home</button>
+                <button class="nav-link" data-target="about">About</button>
+                <button class="nav-link" data-target="skills">Skills</button>
+                <button class="nav-link" data-target="projects">Projects</button>
+                <button class="nav-link" data-target="education">Education</button>
+                <button class="nav-link" data-target="contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="glow-text">Manvansh Singh</span>
+                </h1>
+                
+                <p class="hero-subtitle">I'm a <span class="typing-text"></span></p>
+
+                <p class="hero-description">
+                    I'm a passionate learner and developer who loves building, exploring, and improving. 
+                    Once I'm assigned a task, I commit to it wholeheartedly and strive to deliver the best possible outcome.
+                </p>
+            </div>
+            
+            <div class="hero-buttons">
+                <button class="glow-button primary" onclick="window.open('Manvansh_Singh_Resume.docx', '_blank')">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </button>
+                <button class="glow-button secondary" onclick="window.open('https://github.com/Dazaiii08', '_blank')">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </button>
+                <button class="glow-button secondary" onclick="window.open('https://www.linkedin.com/in/manvansh086/', '_blank')">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="floating-icon code">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-icon zap">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="floating-icon star">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-separator"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-card">
+                <p class="about-text">
+                    I'm a passionate and motivated full-stack developer who thrives on building and creating new things. With a calm and composed mindset, I approach every challenge as an opportunity to grow. I'm a keen learner, always exploring and expanding my knowledge in the tech world. Problem-solving excites me, and I believe in delivering fast, efficient, and polished work. I strive for perfection in everything I do, ensuring each project is completed with dedication and attention to detail. Driven by curiosity and creativity, I love working on ideas that inspire and push the boundaries of innovation. 
+                    Once I'm assigned a task, I commit to it wholeheartedly and strive to deliver the best possible outcome.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="section-separator"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3 class="skill-category">Languages</h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-badges">
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3 class="skill-category">Web Development</h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">React.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3 class="skill-category">Tools</h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-badges">
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">Canva</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3 class="skill-category">Coursework</h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-badges">
+                        <span class="skill-badge">Data Structures & Algorithms</span>
+                        <span class="skill-badge">Object-Oriented Programming</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3 class="skill-category">Soft Skills</h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-badges">
+                        <span class="skill-badge">Leadership</span>
+                        <span class="skill-badge">Problem Solver</span>
+                        <span class="skill-badge">Competitive Programming</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3 class="skill-category">Languages Known</h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-badges">
+                        <span class="skill-badge">English</span>
+                        <span class="skill-badge">Hindi</span>
+                        <span class="skill-badge">Punjabi</span>
+                        <span class="skill-badge">Spanish (Intermediate)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-separator"></div>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">🎵 Music Player</h3>
+                    <p class="project-description">
+                        A sleek, interactive music player featuring a playlist of The Weeknd—my favorite artist. 
+                        Built from scratch using HTML, CSS, and JavaScript with modern UI/UX design.
+                    </p>
+                </div>
+                <div class="project-content">
+                    <div class="project-links">
+                        <button class="project-link-btn" onclick="window.open('https://dazaiii08.github.io/Music-Player/', '_blank')">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                        <button class="project-link-btn secondary" onclick="window.open('https://github.com/Dazaiii08/Music-Player', '_blank')">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <div class="section-separator"></div>
+        </div>
+        
+        <div class="education-content">
+            <div class="education-card">
+                <div class="education-header">
+                    <h3 class="education-degree">B.Tech in Robotics and Artificial Intelligence</h3>
+                    <p class="education-institution">
+                        Chandigarh Engineering College, CGC Landran
+                    </p>
+                </div>
+                <div class="education-details">
+                    <p class="education-duration">2024–2028</p>
+                    <div class="certifications">
+                        <h4 class="certifications-title">Certifications</h4>
+                        <div class="certification-badges">
+                            <span class="certification-badge">Generative AI – OUTSKILL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-separator"></div>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <h3 class="contact-title">Get In Touch</h3>
+                        <p class="contact-description">
+                            Feel free to reach out for collaborations or just a friendly hello!
+                        </p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <a href="mailto:manvansh086@gmail.com" class="contact-link">
+                                manvansh086@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span class="contact-text">9896838285</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            <a href="https://www.linkedin.com/in/manvansh086/" target="_blank" class="contact-link">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <div class="contact-form-card">
+                    <div class="contact-form-header">
+                        <h3 class="contact-form-title">
+                            <i class="fas fa-comment-dots"></i>
+                            Send Message
+                        </h3>
+                        <p class="contact-form-description">
+                            Drop me a line and I'll get back to you as soon as possible.
+                        </p>
+                    </div>
+                    <form id="contact-form" class="contact-form" name="Form" action="https://formspree.io/f/mdkdlyyw" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or just say hello!" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="button-text">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <div class="footer-content">
+            <p class="footer-text">There is a Konami Code for this website. All the best activating it ^_^
+            </p>
+            <p class="footer-text">
+            </p>
+            <p class="footer-text">
+                © 2025 Manvansh Singh. Built with HTML, CSS, and JavaScript.
+            </p>
+            
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <div class="toast-message">
+                <div class="toast-title"></div>
+                <div class="toast-description"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
