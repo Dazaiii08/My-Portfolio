@@ -107,7 +107,9 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .nav-link {
@@ -399,9 +401,8 @@ body {
 
 /* Skills Section */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    column-count: 3;
+    column-gap: 2rem;
 }
 
 .skill-card {
@@ -412,14 +413,21 @@ body {
     padding: 1.5rem;
     transition: all 0.3s ease;
     animation: slideInUp 0.8s ease-out forwards;
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
 }
 
-.skill-card:nth-child(1) { animation-delay: 0.1s; }
-.skill-card:nth-child(2) { animation-delay: 0.2s; }
-.skill-card:nth-child(3) { animation-delay: 0.3s; }
-.skill-card:nth-child(4) { animation-delay: 0.4s; }
-.skill-card:nth-child(5) { animation-delay: 0.5s; }
-.skill-card:nth-child(6) { animation-delay: 0.6s; }
+.skill-card:nth-child(1) { animation-delay: 0.05s; }
+.skill-card:nth-child(2) { animation-delay: 0.1s; }
+.skill-card:nth-child(3) { animation-delay: 0.15s; }
+.skill-card:nth-child(4) { animation-delay: 0.2s; }
+.skill-card:nth-child(5) { animation-delay: 0.25s; }
+.skill-card:nth-child(6) { animation-delay: 0.3s; }
+.skill-card:nth-child(7) { animation-delay: 0.35s; }
+.skill-card:nth-child(8) { animation-delay: 0.4s; }
+.skill-card:nth-child(9) { animation-delay: 0.45s; }
 
 .skill-card:hover {
     border-color: rgba(220, 38, 38, 0.4);
@@ -455,6 +463,78 @@ body {
     background: rgba(220, 38, 38, 0.2);
     box-shadow: 0 0 15px rgba(220, 38, 38, 0.3);
     transform: scale(1.10);
+}
+
+/* Experience Section */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    animation: slideInUp 0.8s ease-out forwards;
+}
+
+.experience-card:hover {
+    border-color: rgba(220, 38, 38, 0.4);
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.28);
+    transform: translateY(-2px);
+}
+
+.experience-header {
+    margin-bottom: 1.25rem;
+}
+
+.experience-role {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.experience-company {
+    color: #dc2626;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.experience-duration {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.experience-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.experience-list li {
+    color: #e5e5e5;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.experience-list li::before {
+    content: '▸';
+    color: #dc2626;
+    position: absolute;
+    left: 0;
 }
 
 /* Projects Section */
@@ -534,6 +614,7 @@ body {
 /* Education Section */
 .education-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
@@ -598,6 +679,39 @@ body {
     background: rgba(220, 38, 38, 0.226);
     box-shadow: 0 0 15px rgba(220, 38, 38, 0.3);
     transform: scale(1.05);
+}
+
+/* Compact side-by-side Education layout */
+.education-content-compact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+}
+
+.education-card-compact {
+    max-width: none;
+    padding: 1.25rem;
+}
+
+.education-card-compact .education-degree {
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+}
+
+.education-card-compact .education-institution {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-card-compact .education-duration {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .education-content-compact {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Contact Section */
@@ -942,7 +1056,7 @@ body {
     }
     
     .skills-grid {
-        grid-template-columns: 1fr;
+        column-count: 1;
     }
     
     .projects-grid {

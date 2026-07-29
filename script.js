@@ -59,68 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Contact Form
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    const submitButton = contactForm.querySelector('.submit-button');
-    const buttonText = submitButton.querySelector('.button-text');
-    const buttonIcon = submitButton.querySelector('i');
-    
-    contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        };
-        
-        // Basic validation
-        if (!data.name || !data.email || !data.subject || !data.message) {
-            showToast('Error', 'Please fill in all fields.', 'error');
-            return;
-        }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(data.email)) {
-            showToast('Error', 'Please enter a valid email address.', 'error');
-            return;
-        }
-        
-        // Show loading state
-        submitButton.classList.add('loading');
-        submitButton.disabled = true;
-        buttonIcon.className = 'spinner';
-        buttonText.textContent = 'Sending...';
-        
-        try {
-            // Simulate API call (replace with actual backend endpoint)
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            
-            // Show success message
-            showToast('Message Sent!', 'Thank you for your message. I\'ll get back to you soon!', 'success');
-            
-            // Reset form
-            contactForm.reset();
-            
-        } catch (error) {
-            // Show error message
-            showToast('Error', 'Failed to send message. Please try again.', 'error');
-            
-        } finally {
-            // Reset button state
-            submitButton.classList.remove('loading');
-            submitButton.disabled = false;
-            buttonIcon.className = 'fas fa-paper-plane';
-            buttonText.textContent = 'Send Message';
-        }
-    });
-});
-
 // Toast Notification System
 function showToast(title, description, type = 'success') {
     const toast = document.getElementById('toast');
@@ -178,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function () {
     const typingSpan = document.querySelector('.typing-text');
 
-    const words = ["Fullstack Developer", "Problem Solver", "Tech Enthusiast", "Keen Learner","Creative Thinker"];
+    const words = ["Fullstack Developer", "AI/ML Engineer", "Problem Solver", "Tech Enthusiast", "Keen Learner", "Creative Thinker"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
