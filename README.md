@@ -1,41 +1,15 @@
-# My-Portfolio
+# Manvansh Singh — Portfolio
 
-A modern and interactive personal portfolio website showcasing my projects, skills, and experience. The website is designed with a focus on clean UI, smooth interactions, and responsiveness across devices.
+## Run locally
+Open `index.html` in a browser, or use VS Code Live Server.
 
-## 🌐 Live Website:
-https://dazaiii08.github.io/My-Portfolio/
+## Files
+- `index.html` — page structure and portfolio content
+- `style.css` — black/red responsive styling, original project-card design, floating symbols and typography
+- `script.js` — in-page navigation, mobile menu, reveal effects, typing animation, scroll progress and easter egg
+- `assets/Manvansh_Singh_Resume.pdf` — resume linked from the hero section
 
-⸻
-
-## 🚀 Features
-	•	Smooth scrolling navigation
-	•	Interactive UI animations
-	•	Project showcase section
-	•	Resume download option
-	•	Contact section
-	•	Fully responsive design
-	•	Custom cursor and hover effects
-
-⸻
-
-## 🛠 Tech Stack
-	•	HTML5
-	•	CSS3
-	•	JavaScript
-
-⸻
-
-## 📂 Sections Included
-	•	Hero Section
-	•	About Me
-	•	Skills
-	•	Projects
-	•	Certifications
-	•	Contact
-
-## 📬 Contact
-
-If you’d like to connect or collaborate, feel free to reach out through the contact section of the portfolio.
-
-
-⭐ If you like the project, consider giving it a star on GitHub!
+## Before publishing
+1. Confirm the resume PDF is the version you want public.
+2. Test the site on desktop and mobile after deployment.
+3. Check all external project links and the email/LinkedIn links.

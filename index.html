@@ -1,513 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manvansh Singh | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Manvansh Singh — AI/ML and software developer building intelligent systems, computer vision pipelines, and full-stack applications.">
+  <title>Manvansh Singh | AI/ML & Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="glow-circle"></div>
-            <h2 class="loading-text">Loading Portfolio...</h2>
-        </div>
+  <div class="ambient-symbols" aria-hidden="true">
+    <span class="symbol symbol-one">{ }</span><span class="symbol symbol-two">&lt;/&gt;</span>
+    <span class="symbol symbol-three">✳</span><span class="symbol symbol-four">01</span>
+    <span class="symbol symbol-five">[ ]</span><span class="symbol symbol-six">⌘</span>
+    <span class="symbol symbol-seven">✦</span><span class="symbol symbol-eight">λ</span>
+  </div>
+  <div id="loading-screen" class="loading-screen" aria-label="Loading portfolio">
+    <div class="loader-mark">MS<span>.</span></div>
+    <p>Building something meaningful<span class="loading-dots">...</span></p>
+  </div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="portfolio-nav" aria-label="Main navigation">
+    <div class="nav-content">
+      <a class="nav-logo" href="#home" aria-label="Manvansh Singh home">MS<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#achievements">Achievements</a>
+        <a class="nav-link nav-contact" href="#contact">Contact <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
     </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="portfolio-nav">
-        <div class="nav-content">
-            <div class="nav-logo">
-                <span class="logo-text">MS</span>
-            </div>
-            <div class="nav-links">
-                <button class="nav-link active" data-target="home">Home</button>
-                <button class="nav-link" data-target="about">About</button>
-                <button class="nav-link" data-target="skills">Skills</button>
-                <button class="nav-link" data-target="experience">Experience</button>
-                <button class="nav-link" data-target="projects">Projects</button>
-                <button class="nav-link" data-target="education">Education</button>
-                <button class="nav-link" data-target="contact">Contact</button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
+  <main>
     <section id="home" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="glow-text">Manvansh Singh</span>
-                </h1>
-                
-                <p class="hero-subtitle">I'm a <span class="typing-text"></span></p>
-
-                <p class="hero-description">
-                    I'm a passionate learner and developer who loves building, exploring, and improving. 
-                    Once I'm assigned a task, I commit to it wholeheartedly and strive to deliver the best possible outcome.
-                </p>
-            </div>
-            
-            <div class="hero-buttons">
-                <a href="assets/Manvansh_resume05.pdf" target="_blank" class="glow-button primary">
-    <i class="fas fa-download"></i>
-    Download Resume
-</a>
-                <button class="glow-button secondary" onclick="window.open('https://github.com/Dazaiii08', '_blank')">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </button>
-                <button class="glow-button secondary" onclick="window.open('https://www.linkedin.com/in/manvansh086/', '_blank')">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </button>
-            </div>
-        </div>
-        
-        <div class="hero-visual">
-            <div class="floating-elements">
-                <div class="floating-icon code">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="floating-icon zap">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <div class="floating-icon star">
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="content-section">
-        <div class="section-header">
-            <h2 class="section-title">About Me</h2>
-            <div class="section-separator"></div>
-        </div>
-        
-        <div class="about-content">
-            <div class="about-card">
-               <p class="about-text">
-    I'm a full-stack developer and machine learning enthusiast who thrives on building and creating new things, from production ERP modules to end-to-end ML pipelines. With a calm and composed mindset, I approach every challenge as an opportunity to grow. I'm a keen learner, always exploring and expanding my knowledge across the MERN stack and the ML/DL ecosystem alike. Problem-solving excites me, and I believe in delivering fast, efficient, and polished work. I strive for perfection in everything I do, ensuring each project is completed with dedication and attention to detail. Driven by curiosity and creativity, I love working on ideas that inspire and push the boundaries of innovation.
-    Once I'm assigned a task, I commit to it wholeheartedly and strive to deliver the best possible outcome.
-</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="content-section">
-        <div class="section-header">
-            <h2 class="section-title">Skills & Tools</h2>
-            <div class="section-separator"></div>
-        </div>
-
-        
-
-             <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Languages</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">C</span>
-                        <span class="skill-badge">C++</span>
-                        <span class="skill-badge">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">ML & Data</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-    <span class="skill-badge">Regression (Linear/Ridge/Lasso)</span>
-    <span class="skill-badge">Classification (Logistic Regression, SVM, Random Forest, XGBoost)</span>
-    <span class="skill-badge">Clustering (K-Means, DBSCAN)</span>
-    <span class="skill-badge">PCA</span>
-    <span class="skill-badge">Feature Engineering</span>
-    <span class="skill-badge">Cross-Validation</span>
-    <span class="skill-badge">Hyperparameter Tuning</span>
-</div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">ML / DL</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">PyTorch</span>
-                        <span class="skill-badge">CNNs</span>
-                        <span class="skill-badge">U-Net</span>
-                        <span class="skill-badge">Computer Vision</span>
-                        <span class="skill-badge">Medical Image Segmentation</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Frontend</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">HTML</span>
-                        <span class="skill-badge">CSS</span>
-                        <span class="skill-badge">React.js</span>
-                        <span class="skill-badge">Tailwind CSS</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Backend & Database</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">Node.js</span>
-                        <span class="skill-badge">Express.js</span>
-                        <span class="skill-badge">FastAPI</span>
-                        <span class="skill-badge">MongoDB</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">PostgreSQL</span>
-                        <span class="skill-badge">REST APIs</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Python Libraries</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">NumPy</span>
-                        <span class="skill-badge">Pandas</span>
-                        <span class="skill-badge">Matplotlib</span>
-                        <span class="skill-badge">Seaborn</span>
-                        <span class="skill-badge">Scikit-learn</span>
-                        <span class="skill-badge">NiBabel</span>
-                        <span class="skill-badge">Plotly</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Developer Tools</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">GitHub</span>
-                        <span class="skill-badge">Postman</span>
-                        <span class="skill-badge">VS Code</span>
-                        <span class="skill-badge">Jupyter Lab</span>
-                        <span class="skill-badge">Vercel</span>
-                        <span class="skill-badge">Render</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Soft Skills</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">Public Speaking</span>
-                        <span class="skill-badge">Leadership</span>
-                        <span class="skill-badge">Problem Solving</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-card">
-                <div class="skill-header">
-                    <h3 class="skill-category">Spoken Languages</h3>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-badges">
-                        <span class="skill-badge">English</span>
-                        <span class="skill-badge">Hindi</span>
-                        <span class="skill-badge">Punjabi</span>
-                        <span class="skill-badge">Spanish (Intermediate)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-<section id="experience" class="content-section">
-    <div class="section-header">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-separator"></div>
-    </div>
-
-    <div class="experience-content">
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3 class="experience-role">Software Developer</h3>
-                <p class="experience-company">Devantra Innovations Pvt Ltd. &mdash; Mohali</p>
-                <p class="experience-duration">Jul 2026 &ndash; Present</p>
-            </div>
-            <ul class="experience-list">
-                <li>Led a team of 3 developers to design and deliver a full-stack Recruitment Drive Portal, building dedicated Admin and Candidate portals to automate the complete recruitment lifecycle.</li>
-                <li>Engineered 26 REST API endpoints using Node.js, Express.js, and PostgreSQL for authentication, recruitment drives, candidate onboarding, assessments, reporting, and result management.</li>
-                <li>Developed 8+ candidate-facing pages and 7 reusable React components, implementing secure role-based workflows and seamless frontend-backend integration.</li>
-                <li>Designed, implemented, and deployed production-ready features while collaborating with cross-functional teams using Git/GitHub across multiple business applications.</li>
-            </ul>
-        </div>
-
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3 class="experience-role">Software Developer Intern</h3>
-                <p class="experience-company">Devantra Innovations Pvt Ltd. &mdash; Mohali</p>
-                <p class="experience-duration">Jan 2026 &ndash; Jul 2026</p>
-            </div>
-            <ul class="experience-list">
-                <li>Architected and delivered 5 production ERP modules by engineering 18 REST API endpoints using PHP, Node.js, and PostgreSQL, supporting daily operations for 20+ employees and 5 administrators.</li>
-                <li>Implemented role-based authorization for Admin, Manager, and Member roles, enabling secure enterprise workflows across the ERP platform.</li>
-                <li>Designed and integrated responsive interfaces across 10+ ERP pages, ensuring consistent user experience and seamless frontend-backend communication.</li>
-                <li>Enhanced ERP Dashboard, Team Management, and workflow automation features while collaborating with the engineering team using Git/GitHub.</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="content-section">
-        <div class="section-header">
-            <h2 class="section-title">Projects</h2>
-            <div class="section-separator"></div>
-        </div>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">Turbofan Predictive Maintenance System</h3>
-                    <p class="project-description">
-                        Engineered 46 time-series features (rolling stats, RUL labels) from NASA's C-MAPSS dataset (100 engines, 20K+ cycles) with engine-level splitting to prevent temporal data leakage. Trained RF/XGBoost models (GridSearchCV) achieving R²=0.79 (RUL), F1=0.87, Recall=0.93; Isolation Forest flagged failures 12 cycles out vs. 113 for normal readings. Built with FastAPI backend and a React frontend.
-                    </p>
-                </div>
-                <div class="project-content">
-                    <div class="project-links">
-                        <button class="project-link-btn" onclick="window.open('https://predictive-maintenance-peach.vercel.app/', '_blank')">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
-                        </button>
-                        <button class="project-link-btn secondary" onclick="window.open('https://github.com/Dazaiii08/predictive-maintenance', '_blank')">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">Dental CBCT Tooth Segmentation Pipeline</h3>
-                    <p class="project-description">
-                        Built a full preprocessing-to-postprocessing 2D U-Net pipeline (7.7M params) for 3D CBCT tooth segmentation, trained on 14,790 slices from 50 volumes on RTX 4050 (CUDA). Achieved 0.7479 Dice / 0.6948 IoU on the held-out test set, with a custom PyTorch DataLoader and interactive 3D Plotly visualization of predictions.
-                    </p>
-                </div>
-                <div class="project-content">
-                    <div class="project-links">
-                        <button class="project-link-btn secondary" onclick="window.open('https://github.com/Dazaiii08/dental-cbct-segmentation', '_blank')">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">AI Interview Prep Platform</h3>
-                    <p class="project-description">
-                        AI platform generating 8-10 role/experience-tailored interview questions via the Gemini API, with a "load more" feature (+4-5) and a pin/bookmark revision feature. Built with the MERN stack, enabled JWT authentication with protected routes and session expiry, and deployed on Vercel and Render.
-                    </p>
-                </div>
-                <div class="project-content">
-                    <div class="project-links">
-                        <button class="project-link-btn" onclick="window.open('https://interview-prep-ai-lemon.vercel.app/', '_blank')">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
-                        </button>
-                        <button class="project-link-btn secondary" onclick="window.open('https://github.com/Dazaiii08/Interview-Prep-AI', '_blank')">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-    <div class="project-header">
-        <h3 class="project-title">Heart Disease Risk Assessment</h3>
-        <p class="project-description">
-            ML mini-project predicting the presence of heart disease using Decision Tree and Random Forest classifiers on the UCI Heart Disease dataset (binary target). Covers the full workflow — EDA, data cleaning, missing value handling, categorical encoding, cross-validation, hyperparameter tuning, and feature importance analysis. Random Forest outperformed Decision Tree across all metrics, reaching 80.43% accuracy vs. 78.80%.
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO INTERNSHIP & SOFTWARE OPPORTUNITIES</p>
+        <h1>Manvansh <span class="gradient-text">Singh.</span></h1>
+        <p class="hero-subtitle">I build <span class="typing-text" aria-live="polite"></span><span class="typing-cursor">|</span></p>
+        <p class="hero-description">
+          AI/ML and software developer focused on machine learning, computer vision,
+          and building reliable full-stack applications — from model pipelines to
+          user-facing products.
         </p>
-    </div>
-    <div class="project-content">
-        <div class="project-links">
-            <button class="project-link-btn secondary" onclick="window.open('https://github.com/Dazaiii08/heart-disease-risk-assessment', '_blank')">
-                <i class="fab fa-github"></i>
-                GitHub
-            </button>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="button button-outline" href="assets/Manvansh_Singh_Resume.pdf" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i> Download resume
+          </a>
         </div>
-    </div>
-</div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">Resume Builder</h3>
-                    <p class="project-description">
-                        Interactive web application that allows users to create professional resumes with customizable sections and real-time preview. Designed to simplify resume creation through an intuitive UI and structured input system, enabling quick generation of clean and organized resumes.
-                    </p>
-                </div>
-                <div class="project-content">
-                    <div class="project-links">
-                        <button class="project-link-btn" onclick="window.open('https://resume-builder-ix1p.vercel.app/', '_blank')">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
-                        </button>
-                        <button class="project-link-btn secondary" onclick="window.open('https://github.com/Dazaiii08/Resume-Builder', '_blank')">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="social-links">
+          <a href="https://github.com/Dazaiii08" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/manvansh086/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:manvansh086@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
         </div>
-
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="content-section">
-        <div class="section-header">
-            <h2 class="section-title">Education</h2>
-            <div class="section-separator"></div>
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curiosity into <span class="gradient-text">capability.</span></h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy panel reveal">
+          <p class="lead-copy">I’m a Robotics & Artificial Intelligence undergraduate who enjoys turning complex problems into practical software.</p>
+          <p>My work spans machine learning, deep learning, computer vision, backend engineering, and full-stack development. I’ve built predictive maintenance models, medical image segmentation pipelines, ocean-temperature reconstruction systems, and production-oriented business applications.</p>
+          <p>Alongside building, I’ve taken on technical leadership responsibilities — coordinating developers, supporting problem-solving, and owning delivery from implementation through deployment. I value clear engineering, measurable outcomes, and continuous learning.</p>
         </div>
-        
-        <div class="education-content education-content-compact">
-
-                     <div class="education-card education-card-compact">
-                <div class="education-header">
-                    <h3 class="education-degree">Secondary (10th) - 85.4%</h3>
-                    <p class="education-institution">
-                        Kendriya Vidyalaya No. 2, Ambala Cantt
-                    </p>
-                </div>
-                <div class="education-details">
-                    <p class="education-duration">2022</p>
-                </div>
-            </div>
-
-
-             <div class="education-card education-card-compact">
-                <div class="education-header">
-                    <h3 class="education-degree">Senior Secondary (12th) - 85.6%</h3>
-                    <p class="education-institution">
-                        Major RN Kapoor DAV Public Sr Sec School
-                    </p>
-                </div>
-                <div class="education-details">
-                    <p class="education-duration">2024</p>
-                </div>
-            </div>
-
-            <div class="education-card education-card-compact">
-                <div class="education-header">
-                    <h3 class="education-degree">B.Tech in Robotics and Artificial Intelligence</h3>
-                    <p class="education-institution">
-                        Chandigarh Engineering College, CGC Landran
-                    </p>
-                </div>
-                <div class="education-details">
-                    <p class="education-duration">2024–2028</p>
-                </div>
-            </div>
+        <div class="about-stats reveal">
+          <div class="stat-card"><strong>225<span>+</span></strong><span>LeetCode problems</span></div>
+          <div class="stat-card"><strong>7</strong><span>Projects, including this portfolio</span></div>
+          <div class="stat-card"><strong>3</strong><span>Professional role stages</span></div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section">
-        <div class="section-header">
-            <h2 class="section-title">Contact</h2>
-            <div class="section-separator"></div>
-        </div>
-        
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <div class="contact-header">
-                        <h3 class="contact-title">Get In Touch</h3>
-                        <p class="contact-description">
-                            Feel free to reach out for collaborations or just a friendly hello!
-                        </p>
-                    </div>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope contact-icon"></i>
-                            <a href="mailto:manvansh086@gmail.com" class="contact-link">
-                                manvansh086@gmail.com
-                            </a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone contact-icon"></i>
-                            <a href="tel:9896838285" class="contact-link">9896838285</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin contact-icon"></i>
-                            <a href="https://www.linkedin.com/in/manvansh086/" target="_blank" class="contact-link">
-                                LinkedIn Profile
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+    <section id="skills" class="section section-alt">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY TOOLKIT</p>
+        <h2>Skills & <span class="gradient-text">technologies.</span></h2>
+        <p class="section-intro">Tools and concepts I use to build, experiment, and ship.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-code"></i></div><h3>Languages</h3><div class="tag-list"><span>Python</span><span>C</span><span>C++</span><span>JavaScript</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-brain"></i></div><h3>Machine Learning</h3><div class="tag-list"><span>Regression</span><span>Classification</span><span>Random Forest</span><span>XGBoost</span><span>Isolation Forest</span><span>Feature Engineering</span><span>GridSearchCV</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div><h3>Deep Learning & Vision</h3><div class="tag-list"><span>PyTorch</span><span>CNNs</span><span>U-Net</span><span>Computer Vision</span><span>Medical Imaging</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-window-maximize"></i></div><h3>Frontend</h3><div class="tag-list"><span>HTML</span><span>CSS</span><span>React.js</span><span>Tailwind CSS</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-server"></i></div><h3>Backend & databases</h3><div class="tag-list"><span>Node.js</span><span>Express.js</span><span>FastAPI</span><span>MongoDB</span><span>MySQL</span><span>PostgreSQL</span><span>REST APIs</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Python ecosystem</h3><div class="tag-list"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Scikit-learn</span><span>NiBabel</span><span>Plotly</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Developer tools</h3><div class="tag-list"><span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span><span>JupyterLab</span><span>Vercel</span><span>Render</span></div></article>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="portfolio-footer">
-        <div class="footer-content">
-            <p class="footer-text">There is a Konami Code for this website. All the best activating it ^_^
-            </p>
-            <p class="footer-text">
-            </p>
-            <p class="footer-text">
-                © 2025 Manvansh Singh. Built with HTML, CSS, and JavaScript.
-            </p>
-            
-        </div>
-    </footer>
+    <section id="experience" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHERE I’VE CONTRIBUTED</p>
+        <h2>Experience & <span class="gradient-text">leadership.</span></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="experience-card panel">
+            <div class="experience-top"><div><p class="eyebrow">DEVANTRA INNOVATIONS PVT. LTD. · MOHALI</p><h3>Co-Lead — Technical Department</h3></div><span class="date-pill">Sep 2026 — Present</span></div>
+            <ul>
+              <li>Promoted to Co-Lead – Technical Department based on technical contribution, ownership, and leadership.</li>
+              <li>Led the development of a client-facing web project, taking ownership of technical execution, coordination, and delivery.</li>
+              <li>Took on increasing technical responsibilities and supported team members with task coordination and problem-solving.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="experience-card panel">
+            <div class="experience-top"><div><p class="eyebrow">DEVANTRA INNOVATIONS PVT. LTD. · MOHALI</p><h3>Software Developer</h3></div><span class="date-pill">Jul 2026 — Sep 2026</span></div>
+            <ul>
+              <li>Led a team of 3 developers to architect and deliver a full-stack Recruitment Drive Portal with dedicated Admin and Candidate portals, streamlining the end-to-end hiring process.</li>
+              <li>Built 26 REST API endpoints using Node.js, Express.js, and PostgreSQL for authentication, recruitment drive management, candidate onboarding, assessment workflows, reporting, and result publishing.</li>
+              <li>Developed 8+ candidate-facing pages, including authentication, profile management, system compatibility checks, MCQ assessments, coding challenges, AI interview, and results.</li>
+              <li>Designed and integrated 7 reusable UI components for authentication, session management, progress tracking, timers, and shared workflows.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="experience-card panel">
+            <div class="experience-top"><div><p class="eyebrow">DEVANTRA INNOVATIONS PVT. LTD. · MOHALI</p><h3>Software Developer Intern</h3></div><span class="date-pill">Jan 2026 — Jul 2026</span></div>
+            <ul>
+              <li>Architected and developed 5 core ERP modules, building 18 REST API endpoints using PHP, Node.js, and PostgreSQL for task management, workflow automation, notifications, profile management, and team operations.</li>
+              <li>Implemented role-based authorization for Admins, Managers, and Members, ensuring secure access control across ERP workflows.</li>
+              <li>Built and integrated responsive interfaces across 10+ ERP pages, delivering seamless frontend-backend communication and consistent user experience.</li>
+              <li>Contributed to ERP Dashboard development and internal workflow enhancements, improving operational efficiency across business processes.</li>
+              <li>Collaborated with cross-functional developers using Git/GitHub to deliver production-ready features through version control and feature integration.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="toast">
-        <div class="toast-content">
-            <i class="toast-icon"></i>
-            <div class="toast-message">
-                <div class="toast-title"></div>
-                <div class="toast-description"></div>
-            </div>
-        </div>
-    </div>
+    <section id="projects" class="section section-alt">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects with <span class="gradient-text">purpose.</span></h2>
+      </div>
+      <div class="projects-grid original-projects-grid">
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">OceanEmbed — Subsurface Temperature Reconstruction</h3>
+            <p class="project-description">Built a PyTorch CNN encoder–decoder to reconstruct Bay of Bengal subsurface temperatures from SST, SSH, and SSS inputs. Generates 76 × 76 maps across 14 depth levels (0.5–700 m), achieving 1.420°C RMSE — 12.3% below the climatology baseline.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+            <a class="project-link-btn" href="https://ocean-embed-beta.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/OceanEmbed" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">Dental CBCT Tooth Segmentation Pipeline</h3>
+            <p class="project-description">Developed a 2D U-Net pipeline for 3D CBCT tooth segmentation, trained on 14,790 slices from 50 volumes. The 7.7M-parameter model achieved a 0.7479 Dice score and 0.6948 IoU, with interactive 3D visualisation of predictions.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+                        <a class="project-link-btn" href="https://lnkd.in/p/gupunmhD" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/dental-cbct-segmentation" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">Turbofan Predictive Maintenance System</h3>
+            <p class="project-description">Used NASA C-MAPSS engine data to build an RUL prediction and anomaly-detection pipeline. Random Forest and XGBoost achieved R² = 0.79 for RUL prediction, F1 = 0.87, and recall = 0.93; served through FastAPI and React.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+            <a class="project-link-btn" href="https://predictive-maintenance-peach.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/predictive-maintenance" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">AI Interview Prep Platform</h3>
+            <p class="project-description">Created a MERN-based interview preparation platform that generates role-specific questions and supports pinned questions for revision. Includes JWT authentication, protected routes, session expiry, and a deployed React interface.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+            <a class="project-link-btn" href="https://interview-prep-ai-lemon.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/Interview-Prep-AI" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">Heart Disease Risk Assessment</h3>
+            <p class="project-description">Built and evaluated Decision Tree and Random Forest classifiers on the UCI Heart Disease dataset. The workflow covered data cleaning, encoding, cross-validation, hyperparameter tuning, and feature importance; Random Forest reached 80.43% accuracy.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/heart-disease-risk-assessment" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">Resume Builder</h3>
+            <p class="project-description">Built a resume creation app with an interactive editor, customisable sections, theme selection, live preview, and PDF export. The project combines a React frontend with a Node.js backend to streamline resume creation.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+            <a class="project-link-btn" href="https://resume-builder-ix1p.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/Resume-Builder" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-header">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">Designed and developed this portfolio to bring together my engineering experience, AI/ML projects, technical skills, and achievements in one responsive, accessible website with custom interactions and a consistent visual identity.</p>
+          </div>
+          <div class="project-content"><div class="project-links">
+            <a class="project-link-btn secondary" href="https://github.com/Dazaiii08/My-Portfolio" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div></div>
+        </article>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="education" class="section">
+      <div class="section-heading reveal"><p class="eyebrow">THE FOUNDATION</p><h2>Education.</h2></div>
+      <div class="education-list">
+        <article class="education-card panel reveal">
+          <div class="education-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="education-details"><p class="eyebrow">2022</p><h3>Secondary (10th) — 85.4%</h3><p>Kendriya Vidyalaya No. 2, Ambala Cantt</p></div>
+        </article>
+        <article class="education-card panel reveal">
+          <div class="education-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="education-details"><p class="eyebrow">2024</p><h3>Senior Secondary (12th) — 85.6%</h3><p>Major RN Kapoor DAV Public Sr. Sec. School</p></div>
+        </article>
+        <article class="education-card panel reveal">
+          <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="education-details"><p class="eyebrow">2024 — 2028</p><h3>B.Tech in Robotics and Artificial Intelligence</h3><p>Chandigarh Engineering College, CGC Landran</p></div>
+          <span class="education-status">Undergraduate</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section section-alt">
+      <div class="section-heading reveal"><p class="eyebrow">MILESTONES</p><h2>Achievements & <span class="gradient-text">certifications.</span></h2></div>
+      <div class="achievement-grid">
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-code"></i><div><h3>200+ LeetCode Problems</h3><p>Consistent data structures and algorithms practice.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-trophy"></i><div><h3>Smart India Hackathon 2025</h3><p>Finalist — Internal Round.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-medal"></i><div><h3>1st Prize — CodeQuest</h3><p>College-level coding competition.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-database"></i><div><h3>Data Science Essentials with Python</h3><p>Cisco Networking Academy.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-table"></i><div><h3>SQL and Relational Databases 101</h3><p>IBM Skills Network — Cognitive Class.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-certificate"></i><div><h3>Industrial Training in AI/ML Using Python</h3><p>Four-week industrial training program.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-brands fa-microsoft"></i><div><h3>Career Essentials in Generative AI</h3><p>Microsoft and LinkedIn.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-earth-americas"></i><div><h3>Delegate — CGC International MUN 2026</h3><p>Represented Costa Rica in committee deliberations, research, diplomacy, and resolution-building.</p></div></article>
+        <article class="achievement-card panel reveal"><i class="fa-solid fa-people-group"></i><div><h3>Organising Committee — CGC International MUN 2027</h3><p>Contributing to the planning and execution of the conference.</p></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">HAVE A ROLE OR PROJECT IN MIND?</p>
+        <h2>Let’s build something <span class="gradient-text">useful.</span></h2>
+        <p>I’m open to conversations about AI/ML, software development, internships, and collaborative projects.</p>
+        <a class="button button-primary" href="mailto:manvansh086@gmail.com">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="contact-details"><a href="mailto:manvansh086@gmail.com"><i class="fa-regular fa-envelope"></i> manvansh086@gmail.com</a><a href="tel:+919896838285"><i class="fa-solid fa-phone"></i> +91 98968 38285</a><a href="https://www.linkedin.com/in/manvansh086/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="portfolio-footer">
+    <a class="nav-logo" href="#home">MS<span>.</span></a>
+    <p>Designed & built by Manvansh Singh.</p>
+    <p>© <span id="current-year"></span> · All rights reserved.</p>
+    <p class="konami-hint">There’s a little easter egg hidden here. ↑ ↑ ↓ ↓ ← → ← → B A</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"><i class="fa-solid fa-wand-magic-sparkles"></i><span class="toast-message"></span></div>
+  <script src="script.js"></script>
 </body>
 </html>
